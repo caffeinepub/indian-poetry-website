@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        
+        /* Warm Indian-inspired color palette - Light Mode */
+        --background: 0.98 0.01 40;
+        --foreground: 0.25 0.02 30;
+        
+        --card: 1 0 0;
+        --card-foreground: 0.25 0.02 30;
+        
+        --popover: 1 0 0;
+        --popover-foreground: 0.25 0.02 30;
+        
+        /* Saffron/Orange primary */
+        --primary: 0.65 0.18 45;
+        --primary-foreground: 0.98 0.01 40;
+        
+        /* Warm terracotta secondary */
+        --secondary: 0.75 0.08 35;
+        --secondary-foreground: 0.25 0.02 30;
+        
+        --muted: 0.92 0.02 40;
+        --muted-foreground: 0.50 0.02 30;
+        
+        /* Deep red accent */
+        --accent: 0.55 0.15 25;
+        --accent-foreground: 0.98 0.01 40;
+        
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.98 0.01 40;
+        
+        --border: 0.88 0.02 40;
+        --input: 0.88 0.02 40;
+        --ring: 0.65 0.18 45;
+        
+        --chart-1: 0.65 0.18 45;
+        --chart-2: 0.70 0.15 60;
+        --chart-3: 0.60 0.20 30;
+        --chart-4: 0.75 0.12 50;
+        --chart-5: 0.55 0.15 25;
+        
+        /* India Map Color Palette - Warm, culturally appropriate colors */
+        --map-1: 0.62 0.20 35;   /* Deep saffron */
+        --map-2: 0.68 0.18 50;   /* Golden amber */
+        --map-3: 0.58 0.22 25;   /* Terracotta red */
+        --map-4: 0.72 0.16 45;   /* Warm orange */
+        --map-5: 0.55 0.24 20;   /* Deep maroon */
+        --map-6: 0.65 0.19 60;   /* Bright gold */
+        --map-7: 0.60 0.21 40;   /* Burnt orange */
+        --map-8: 0.70 0.17 55;   /* Marigold yellow */
+        --map-9: 0.56 0.23 30;   /* Rust red */
+        --map-10: 0.66 0.18 65;  /* Turmeric yellow */
+        --map-11: 0.63 0.20 45;  /* Saffron orange */
+        --map-12: 0.58 0.22 35;  /* Clay red */
+        --map-13: 0.69 0.17 50;  /* Honey gold */
+        --map-14: 0.61 0.21 40;  /* Paprika orange */
+        --map-15: 0.57 0.23 25;  /* Deep brick */
+        --map-16: 0.67 0.18 55;  /* Amber gold */
+        --map-17: 0.59 0.22 30;  /* Copper red */
+        --map-18: 0.71 0.16 60;  /* Bright saffron */
+        --map-19: 0.54 0.24 20;  /* Dark maroon */
+        --map-20: 0.64 0.19 45;  /* Warm tangerine */
+        --map-21: 0.60 0.21 35;  /* Burnt sienna */
+        --map-22: 0.68 0.17 50;  /* Golden orange */
+        --map-23: 0.56 0.23 28;  /* Brick red */
+        --map-24: 0.66 0.18 58;  /* Bright gold */
+        --map-25: 0.62 0.20 38;  /* Coral orange */
+        --map-26: 0.58 0.22 32;  /* Rust orange */
+        --map-27: 0.70 0.16 52;  /* Marigold */
+        --map-28: 0.55 0.24 22;  /* Deep red */
+        --map-29: 0.65 0.19 48;  /* Saffron gold */
+        --map-30: 0.59 0.21 33;  /* Terracotta */
+        --map-31: 0.69 0.17 55;  /* Bright amber */
+        --map-32: 0.61 0.20 42;  /* Orange red */
+        --map-33: 0.57 0.23 27;  /* Deep rust */
+        --map-34: 0.67 0.18 53;  /* Golden yellow */
+        --map-35: 0.63 0.19 43;  /* Warm orange */
+        --map-36: 0.56 0.22 30;  /* Brick orange */
+    }
+
+    .dark {
+        /* Dark mode with warm undertones */
+        --background: 0.20 0.02 30;
+        --foreground: 0.95 0.01 40;
+        
+        --card: 0.25 0.02 30;
+        --card-foreground: 0.95 0.01 40;
+        
+        --popover: 0.22 0.02 30;
+        --popover-foreground: 0.95 0.01 40;
+        
+        /* Brighter saffron for dark mode */
+        --primary: 0.75 0.20 45;
+        --primary-foreground: 0.20 0.02 30;
+        
+        --secondary: 0.35 0.04 35;
+        --secondary-foreground: 0.95 0.01 40;
+        
+        --muted: 0.30 0.02 30;
+        --muted-foreground: 0.65 0.02 35;
+        
+        --accent: 0.45 0.08 30;
+        --accent-foreground: 0.95 0.01 40;
+        
+        --destructive: 0.60 0.20 25;
+        --destructive-foreground: 0.95 0.01 40;
+        
+        --border: 0.30 0.02 30;
+        --input: 0.30 0.02 30;
+        --ring: 0.75 0.20 45;
+        
+        --chart-1: 0.75 0.20 45;
+        --chart-2: 0.70 0.18 60;
+        --chart-3: 0.65 0.22 30;
+        --chart-4: 0.80 0.15 50;
+        --chart-5: 0.60 0.18 25;
+        
+        /* India Map Colors - Enhanced for dark mode */
+        --map-1: 0.68 0.22 35;
+        --map-2: 0.74 0.20 50;
+        --map-3: 0.64 0.24 25;
+        --map-4: 0.78 0.18 45;
+        --map-5: 0.61 0.26 20;
+        --map-6: 0.71 0.21 60;
+        --map-7: 0.66 0.23 40;
+        --map-8: 0.76 0.19 55;
+        --map-9: 0.62 0.25 30;
+        --map-10: 0.72 0.20 65;
+        --map-11: 0.69 0.22 45;
+        --map-12: 0.64 0.24 35;
+        --map-13: 0.75 0.19 50;
+        --map-14: 0.67 0.23 40;
+        --map-15: 0.63 0.25 25;
+        --map-16: 0.73 0.20 55;
+        --map-17: 0.65 0.24 30;
+        --map-18: 0.77 0.18 60;
+        --map-19: 0.60 0.26 20;
+        --map-20: 0.70 0.21 45;
+        --map-21: 0.66 0.23 35;
+        --map-22: 0.74 0.19 50;
+        --map-23: 0.62 0.25 28;
+        --map-24: 0.72 0.20 58;
+        --map-25: 0.68 0.22 38;
+        --map-26: 0.64 0.24 32;
+        --map-27: 0.76 0.18 52;
+        --map-28: 0.61 0.26 22;
+        --map-29: 0.71 0.21 48;
+        --map-30: 0.65 0.23 33;
+        --map-31: 0.75 0.19 55;
+        --map-32: 0.67 0.22 42;
+        --map-33: 0.63 0.25 27;
+        --map-34: 0.73 0.20 53;
+        --map-35: 0.69 0.21 43;
+        --map-36: 0.62 0.24 30;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Crimson Text', 'Noto Sans Devanagari', serif;
+        font-feature-settings: "kern" 1, "liga" 1;
+    }
+    
+    /* Enhanced typography for poetry display */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Noto Sans Devanagari', sans-serif;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+    }
+    
+    /* Poetry content styling */
+    .prose {
+        font-family: 'Crimson Text', 'Noto Sans Devanagari', serif;
+        line-height: 1.8;
+        letter-spacing: 0.01em;
+    }
+    
+    /* Devanagari script optimization */
+    [lang="hi"], .hindi-text {
+        font-family: 'Noto Sans Devanagari', sans-serif;
+        line-height: 1.9;
+    }
+    
+    /* Smooth scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+}

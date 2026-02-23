@@ -1,0 +1,165 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "A bilingual (Hindi and English) poetry website showcasing poets from all 29 Indian states and 8 union territories. Features an interactive India map on the homepage where users can click states/UTs to view poet profiles with their ghazals, kavitas, shers, nazms, kahanis, image shayaris, videos, audio, and top 5 shayaris. Website owner's poetry is featured separately.",
+  "architectural_notes": [
+    "Website requires bilingual content management system for Hindi and English",
+    "Interactive SVG or canvas-based India map with state/UT boundaries",
+    "Media storage and delivery for images, videos, and audio files",
+    "Database schema to organize poets by state/union territory",
+    "Responsive design to handle map interaction on mobile devices"
+  ],
+  "known_issues": [],
+  "isFixRequest": true,
+  "imageRequirements": "## Required Images\n- Colored political map of India showing all 29 states and 8 union territories with distinct warm colors for each region, state boundaries clearly marked, without labels or text overlays, optimized for use as a background layer (india-map-background.dim_1200x800.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-an-interactive-india-map-on-the-homepage-displaying-all-29-states-and-8-union-territories-with-distinct-colors-for-each-region-where-each-state-and-union-territory-is-clickable",
+      "title": "Create an interactive India map on the homepage displaying all 29 states and 8 union territories with distinct colors for each region, where each state and union territory is clickable",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-bilingual-support-for-hindi-and-english-languages-throughout-the-website-interface",
+      "title": "Implement bilingual support for Hindi and English languages throughout the website interface",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-poet-profile-pages-that-display-after-clicking-a-state-union-territory-showing-the-poet-s-biography-ghazals-kavitas-shers-nazms-kahanis-image-shayaris-videos-audio-and-top-5-shayaris-in-both-hindi-and-english",
+      "title": "Create poet profile pages that display after clicking a state/union territory, showing the poet's biography, ghazals, kavitas, shers, nazms, kahanis, image shayaris, videos, audio, and top 5 shayaris in both Hindi and English",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-separate-dedicated-section-for-the-website-owner-s-poetry-that-is-accessible-from-the-main-navigation",
+      "title": "Create a separate dedicated section for the website owner's poetry that is accessible from the main navigation",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-a-visually-appealing-culturally-appropriate-interface-with-a-warm-artistic-theme-featuring-traditional-indian-color-palettes-elegant-typography-suitable-for-poetry-display-and-clean-layouts-that-highlight-literary-content",
+      "title": "Design a visually appealing, culturally appropriate interface with a warm, artistic theme featuring traditional Indian color palettes, elegant typography suitable for poetry display, and clean layouts that highlight literary content",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-modify-the-indiamap-component-to-use-a-more-diverse-color-palette-with-distinct-easily-distinguishable-colors-for-each-state-and-union-territory-ensuring-high-visual-contrast-between-adjacent-regions",
+      "title": "Modify the IndiaMap component to use a more diverse color palette with distinct, easily distinguishable colors for each state and union territory, ensuring high visual contrast between adjacent regions",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-adjust-the-positioning-and-layout-of-the-indiamap-component-state-ut-cards-to-better-align-with-their-actual-geographic-locations-on-the-india-map-making-the-spatial-arrangement-more-recognizable-and-accurate",
+      "title": "Adjust the positioning and layout of the IndiaMap component state/UT cards to better align with their actual geographic locations on the India map, making the spatial arrangement more recognizable and accurate",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-enhance-the-visual-clarity-of-the-indiamap-component-by-increasing-card-sizes-improving-text-readability-adding-stronger-borders-or-outlines-and-ensuring-hover-states-provide-clear-visual-feedback",
+      "title": "Enhance the visual clarity of the IndiaMap component by increasing card sizes, improving text readability, adding stronger borders or outlines, and ensuring hover states provide clear visual feedback",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-website-name-from-the-current-name-to-sahityaaurshabd-in-all-visible-locations-including-the-header-logo-page-titles-and-any-branding-elements",
+      "title": "Update the website name from the current name to 'SahityaAurShabd' in all visible locations including the header logo, page titles, and any branding elements",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-colored-map-of-india-as-a-background-image-behind-the-clickable-state-ut-cards-in-the-indiamap-component-ensuring-the-physical-map-outline-aligns-spatially-with-the-interactive-card-positions",
+      "title": "Add a colored map of India as a background image behind the clickable state/UT cards in the IndiaMap component, ensuring the physical map outline aligns spatially with the interactive card positions",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-refine-the-positioning-of-clickable-state-ut-cards-in-the-indiamap-component-to-precisely-align-with-their-corresponding-geographic-regions-on-the-background-india-map",
+      "title": "Refine the positioning of clickable state/UT cards in the IndiaMap component to precisely align with their corresponding geographic regions on the background India map",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Interactive India map homepage with clickable states and union territories in different colors",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Bilingual support (Hindi and English) throughout the website",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Poet profile pages displaying ghazals, kavitas, shers, nazms, kahanis, image shayaris, videos, audio, and top 5 shayaris",
+      "reqIds": [
+        "AR-1"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Separate section for website owner's poetry",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Support for poets from all 29 states and 8 union territories of India",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Create backend data model for poets with fields for state/union territory association, biography, and poetry content including ghazals, kavitas, shers, nazms, kahanis, image shayaris, videos, audio files, and top 5 shayaris",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Implement backend APIs to create, retrieve, update, and delete poet profiles and their associated poetry content for all 29 states and 8 union territories",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Align the interactive India map with the clickable state/UT cards and use the map as a colored background",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Indian Poetry Website",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

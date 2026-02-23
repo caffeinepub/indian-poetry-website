@@ -1,0 +1,72 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Align map with clickable states, add colored map background, and update website name",
+  "requirements": [
+    {
+      "id": "REQ-11",
+      "summary": "Update website name to 'SahityaAurShabd' across all visible locations",
+      "acceptanceCriteria": [
+        "The header logo displays 'SahityaAurShabd' instead of the current website name",
+        "Page title and metadata reflect 'SahityaAurShabd' as the website name",
+        "All branding elements consistently show the new name"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Layout.tsx",
+          "operation": "modify",
+          "description": "Update the header logo text from the current website name to 'SahityaAurShabd' in the Layout component's header section"
+        },
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Update the page title in the <head> section to reflect 'SahityaAurShabd' as the website name"
+        },
+        {
+          "path": "frontend/src/contexts/LanguageContext.tsx",
+          "operation": "modify",
+          "description": "Add 'SahityaAurShabd' to the translations object for both English and Hindi if website name translations are needed for consistent branding across language modes"
+        }
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "summary": "Add colored India map background image behind clickable state/UT cards",
+      "acceptanceCriteria": [
+        "A colored India map image is rendered as a background layer in the IndiaMap component",
+        "The map's state boundaries visually align with the corresponding clickable state/UT card positions",
+        "The background map enhances geographic recognition without interfering with card interactivity",
+        "The map colors complement the existing warm color palette"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/IndiaMap.tsx",
+          "operation": "modify",
+          "description": "Add the generated India map background image from frontend/public/assets/generated/india-map-background.dim_1200x800.png as a background layer behind the existing clickable region cards. Position the background image to fill the container while maintaining aspect ratio, and ensure the cards remain interactive above the background layer. Use absolute positioning for the background with lower z-index than the cards."
+        },
+        {
+          "path": "frontend/index.css",
+          "operation": "modify",
+          "description": "Add any necessary CSS utility classes or adjustments to support the background map rendering in the IndiaMap component, ensuring the image scales responsively and maintains visibility without interfering with card interactivity"
+        }
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "summary": "Refine positioning of clickable state/UT cards to align with background map geography",
+      "acceptanceCriteria": [
+        "Each state/UT card is positioned directly over its corresponding region on the background map",
+        "The spatial arrangement accurately reflects India's geography",
+        "Cards do not overlap incorrectly or appear disconnected from their geographic locations",
+        "The alignment works responsively across different screen sizes"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/IndiaMap.tsx",
+          "operation": "modify",
+          "description": "Refine the positioning coordinates for each of the 37 state/UT cards to precisely align with their corresponding geographic regions on the background India map image. Adjust the inline positioning styles (top, left values) for each region card to match the background map's state boundaries. Test alignment across different container sizes and add responsive adjustments if needed to maintain geographic accuracy."
+        }
+      ]
+    }
+  ]
+}

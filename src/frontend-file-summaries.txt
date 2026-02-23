@@ -1,0 +1,15 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup, theme provider, language provider, and route definitions for home, poet profiles, and owner poetry pages.",
+  "frontend/src/contexts/LanguageContext.tsx": "Language context provider managing bilingual (Hindi/English) state with localStorage persistence, comprehensive translation dictionary including \"SahityaAurShabd\" website name translations, and both setLanguage and toggleLanguage helper functions.",
+  "frontend/src/components/Layout.tsx": "Root layout component with header navigation displaying \"SahityaAurShabd\" branding, language toggle, decorative background pattern, and footer with attribution.",
+  "frontend/src/components/LanguageToggle.tsx": "Language toggle button component that switches between Hindi and English with visual language indicator.",
+  "frontend/src/pages/HomePage.tsx": "Homepage component displaying welcome message and interactive India map for selecting states and union territories.",
+  "frontend/src/components/IndiaMap.tsx": "Interactive India map component with colored background map image (india-map-background.png) at 30% opacity, 37 clickable state/UT cards with refined geographic positioning aligned to the background map, enhanced visual clarity with borders and hover effects.",
+  "frontend/src/pages/PoetProfilePage.tsx": "Poet profile page displaying biography, avatar, awards, notable works, and tabbed poetry content sections for all categories.",
+  "frontend/src/pages/OwnerPoetryPage.tsx": "Distinguished owner poetry page with special styling, crown icon, and all poetry categories displayed in tabs.",
+  "frontend/src/components/PoetrySectionCard.tsx": "Reusable component for displaying poetry content with support for text, images, videos, audio, and visual assets.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for fetching poet data, main poet, poems by category, and all poets from the backend.",
+  "frontend/src/index.css": "Global styles with warm Indian-inspired OKLCH color system including 36 unique map colors (saffron, terracotta, gold, amber variations) for both light and dark modes, plus custom fonts and typography optimizations.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with 36 map color tokens (map-1 through map-36) mapped to CSS variables, maintaining the warm cultural theme with custom fonts and shadow utilities.",
+  "frontend/index.html": "HTML entry point with updated page title to \"SahityaAurShabd - Indian Poetry Platform\"."
+}

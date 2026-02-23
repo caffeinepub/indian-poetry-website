@@ -1,0 +1,67 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-website-name-from-the-current-name-to-sahityaaurshabd-in-all-visible-locations-including-the-header-logo-page-titles-and-any-branding-elements",
+      "featureTitle": "Update the website name from the current name to 'SahityaAurShabd' in all visible locations including the header logo, page titles, and any branding elements",
+      "files": [
+        "frontend/index.html",
+        "frontend/src/components/Layout.tsx",
+        "frontend/src/contexts/LanguageContext.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-colored-map-of-india-as-a-background-image-behind-the-clickable-state-ut-cards-in-the-indiamap-component-ensuring-the-physical-map-outline-aligns-spatially-with-the-interactive-card-positions",
+      "featureTitle": "Add a colored map of India as a background image behind the clickable state/UT cards in the IndiaMap component, ensuring the physical map outline aligns spatially with the interactive card positions",
+      "files": [
+        "frontend/src/components/IndiaMap.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-refine-the-positioning-of-clickable-state-ut-cards-in-the-indiamap-component-to-precisely-align-with-their-corresponding-geographic-regions-on-the-background-india-map",
+      "featureTitle": "Refine the positioning of clickable state/UT cards in the IndiaMap component to precisely align with their corresponding geographic regions on the background India map",
+      "files": [
+        "frontend/src/components/IndiaMap.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

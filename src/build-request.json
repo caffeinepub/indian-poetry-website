@@ -1,0 +1,81 @@
+{
+  "kind": "build_request",
+  "title": "Align map with clickable states, add colored map background, and update website name",
+  "projectName": "SahityaAurShabd",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-11",
+      "text": "Update the website name from the current name to 'SahityaAurShabd' in all visible locations including the header logo, page titles, and any branding elements",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "name the website as SahityaAurShabd"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The header logo displays 'SahityaAurShabd' instead of the current website name",
+        "Page title and metadata reflect 'SahityaAurShabd' as the website name",
+        "All branding elements consistently show the new name"
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Add a colored map of India as a background image behind the clickable state/UT cards in the IndiaMap component, ensuring the physical map outline aligns spatially with the interactive card positions",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "color the map as the background"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A colored India map image is rendered as a background layer in the IndiaMap component",
+        "The map's state boundaries visually align with the corresponding clickable state/UT card positions",
+        "The background map enhances geographic recognition without interfering with card interactivity",
+        "The map colors complement the existing warm color palette"
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Refine the positioning of clickable state/UT cards in the IndiaMap component to precisely align with their corresponding geographic regions on the background India map",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "align the map with the clickable states"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Each state/UT card is positioned directly over its corresponding region on the background map",
+        "The spatial arrangement accurately reflects India's geography",
+        "Cards do not overlap incorrectly or appear disconnected from their geographic locations",
+        "The alignment works responsively across different screen sizes"
+      ]
+    }
+  ],
+  "constraints": [
+    "Maintain the existing IndiaMap component structure with clickable cards for all 37 regions",
+    "Preserve the warm, culturally appropriate color palette defined in the design system",
+    "Do not modify immutable frontend paths including useInternetIdentity, useActor, main.tsx, and UI components"
+  ],
+  "nonGoals": [
+    "Changing the backend data model or API structure",
+    "Modifying the poet profile page layouts",
+    "Altering the bilingual language functionality",
+    "Redesigning the overall website theme or color system"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Colored political map of India showing all 29 states and 8 union territories with distinct warm colors for each region, state boundaries clearly marked, without labels or text overlays, optimized for use as a background layer (india-map-background.dim_1200x800.png)"
+    ],
+    "edits": []
+  }
+}
